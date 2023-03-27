@@ -39,25 +39,26 @@ namespace VillaAPI.Controllers
         public async Task<ActionResult<ResponseObject>> GetAllVillas()
         {
             // logger.Log("Getting all informations","");
-             IEnumerable<Villa> villas= await villaRepository.GetAllAsync();
+          
             //var villas = await villaRepository.GetAllAsync();
-            response.Result = mapper.Map<List<VillaDTO>>(villas);
-            response.statusCode = HttpStatusCode.OK;
+           // response.Result = mapper.Map<List<VillaDTO>>(villas);
+           // response.statusCode = HttpStatusCode.OK;
            // return Ok(response);
-           return response;
-            //try
-            //{
-            //    var villas = await villaRepository.GetAllAsync();
-            //    response.Result = mapper.Map<List<VillaDTO>>(villas);
-            //    response.statusCode = HttpStatusCode.OK;
-            //    return Ok(response);
-            //}
-            //catch(Exception ex)
-            //{
-            //    response.IsSuccess = false;
-            //    response.ErrorMessages = new List<string>() { ex.ToString() };
-            //}
-            //return response;
+          // return response;
+            try
+            {
+                // IEnumerable<Villa> villas= await villaRepository.GetAllAsync();
+                var villas = await villaRepository.GetAllAsync();
+                response.Result = mapper.Map<List<VillaDTO>>(villas);
+                response.statusCode = HttpStatusCode.OK;
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessages = new List<string>() { ex.ToString() };
+            }
+            return response;
 
         }
         [HttpGet("{id:int}",Name ="GetVilla")]
