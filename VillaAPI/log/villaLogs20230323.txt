@@ -1,0 +1,143 @@
+2023-03-23 10:08:02.927 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-23 10:08:03.075 -04:00 [DBG] Hosting starting
+2023-03-23 10:08:03.314 -04:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 534D4E9E7AD542C0BF9253A4704BBEB1D78C3F32)
+2023-03-23 10:08:03.383 -04:00 [INF] Now listening on: https://localhost:7153
+2023-03-23 10:08:03.384 -04:00 [INF] Now listening on: http://localhost:5153
+2023-03-23 10:08:03.384 -04:00 [DBG] Loaded hosting startup assembly VillaAPI
+2023-03-23 10:08:03.384 -04:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-23 10:08:03.384 -04:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-23 10:08:03.384 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-23 10:08:03.384 -04:00 [INF] Hosting environment: Development
+2023-03-23 10:08:03.385 -04:00 [INF] Content root path: C:\Users\AMZ23\OneDrive - Unum\Desktop\Project\APIProject\VillaAPI\
+2023-03-23 10:08:03.385 -04:00 [DBG] Hosting started
+2023-03-23 10:08:03.664 -04:00 [DBG] Connection id "0HMPBL02BCJ7M" accepted.
+2023-03-23 10:08:03.665 -04:00 [DBG] Connection id "0HMPBL02BCJ7M" started.
+2023-03-23 10:08:03.672 -04:00 [DBG] Connection id "0HMPBL02BCJ7M" received FIN.
+2023-03-23 10:08:03.697 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-23 10:08:03.945 -04:00 [DBG] Connection id "0HMPBL02BCJ7M" stopped.
+2023-03-23 10:08:03.948 -04:00 [DBG] Connection id "0HMPBL02BCJ7M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-23 10:08:04.208 -04:00 [DBG] Connection id "0HMPBL02BCJ7N" accepted.
+2023-03-23 10:08:04.208 -04:00 [DBG] Connection id "0HMPBL02BCJ7N" started.
+2023-03-23 10:08:04.440 -04:00 [DBG] Connection 0HMPBL02BCJ7N established using the following protocol: "Tls12"
+2023-03-23 10:08:04.572 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/swagger/index.html - -
+2023-03-23 10:08:04.633 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-23 10:08:04.667 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-23 10:08:04.668 -04:00 [DBG] Request did not match any endpoints
+2023-03-23 10:08:04.836 -04:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-23 10:08:05.113 -04:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-23 10:08:05.118 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/swagger/index.html - - - 200 - text/html;charset=utf-8 551.9271ms
+2023-03-23 10:08:05.314 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/_framework/aspnetcore-browser-refresh.js - -
+2023-03-23 10:08:05.320 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 6.2810ms
+2023-03-23 10:08:05.507 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/_vs/browserLink - -
+2023-03-23 10:08:05.559 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.3061ms
+2023-03-23 10:08:05.763 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/swagger/v1/swagger.json - -
+2023-03-23 10:08:05.763 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-23 10:08:05.763 -04:00 [DBG] Request did not match any endpoints
+2023-03-23 10:08:05.927 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.5126ms
+2023-03-23 10:08:45.073 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-03-23 10:08:45.218 -04:00 [DBG] Hosting starting
+2023-03-23 10:08:45.435 -04:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 534D4E9E7AD542C0BF9253A4704BBEB1D78C3F32)
+2023-03-23 10:08:45.497 -04:00 [INF] Now listening on: https://localhost:7153
+2023-03-23 10:08:45.497 -04:00 [INF] Now listening on: http://localhost:5153
+2023-03-23 10:08:45.497 -04:00 [DBG] Loaded hosting startup assembly VillaAPI
+2023-03-23 10:08:45.497 -04:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-03-23 10:08:45.498 -04:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-03-23 10:08:45.498 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-23 10:08:45.498 -04:00 [INF] Hosting environment: Development
+2023-03-23 10:08:45.499 -04:00 [INF] Content root path: C:\Users\AMZ23\OneDrive - Unum\Desktop\Project\APIProject\VillaAPI\
+2023-03-23 10:08:45.499 -04:00 [DBG] Hosting started
+2023-03-23 10:08:45.684 -04:00 [DBG] Connection id "0HMPBL0ES4BML" accepted.
+2023-03-23 10:08:45.684 -04:00 [DBG] Connection id "0HMPBL0ES4BMK" accepted.
+2023-03-23 10:08:45.686 -04:00 [DBG] Connection id "0HMPBL0ES4BMK" started.
+2023-03-23 10:08:45.686 -04:00 [DBG] Connection id "0HMPBL0ES4BML" started.
+2023-03-23 10:08:45.690 -04:00 [DBG] Connection id "0HMPBL0ES4BML" received FIN.
+2023-03-23 10:08:45.690 -04:00 [DBG] Connection id "0HMPBL0ES4BMK" received FIN.
+2023-03-23 10:08:45.707 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-23 10:08:45.707 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-23 10:08:45.867 -04:00 [DBG] Connection id "0HMPBL0ES4BML" stopped.
+2023-03-23 10:08:45.867 -04:00 [DBG] Connection id "0HMPBL0ES4BMK" stopped.
+2023-03-23 10:08:45.869 -04:00 [DBG] Connection id "0HMPBL0ES4BML" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-23 10:08:45.871 -04:00 [DBG] Connection id "0HMPBL0ES4BMK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-03-23 10:08:46.162 -04:00 [DBG] Connection id "0HMPBL0ES4BMM" accepted.
+2023-03-23 10:08:46.171 -04:00 [DBG] Connection id "0HMPBL0ES4BMM" started.
+2023-03-23 10:08:46.244 -04:00 [DBG] Connection 0HMPBL0ES4BMM established using the following protocol: "Tls12"
+2023-03-23 10:08:46.311 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/swagger/index.html - -
+2023-03-23 10:08:46.359 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-03-23 10:08:46.392 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-03-23 10:08:46.392 -04:00 [DBG] Request did not match any endpoints
+2023-03-23 10:08:46.499 -04:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-03-23 10:08:46.681 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/_framework/aspnetcore-browser-refresh.js - -
+2023-03-23 10:08:46.690 -04:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-03-23 10:08:46.694 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/swagger/index.html - - - 200 - text/html;charset=utf-8 388.9088ms
+2023-03-23 10:08:46.695 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.8676ms
+2023-03-23 10:08:46.713 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/_vs/browserLink - -
+2023-03-23 10:08:46.761 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.5357ms
+2023-03-23 10:08:46.824 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/swagger/v1/swagger.json - -
+2023-03-23 10:08:46.824 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-03-23 10:08:46.824 -04:00 [DBG] Request did not match any endpoints
+2023-03-23 10:08:47.006 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 182.2470ms
+2023-03-23 10:08:58.722 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/api/Villa - -
+2023-03-23 10:08:58.731 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Villa'
+2023-03-23 10:08:58.734 -04:00 [DBG] Endpoint 'VillaAPI.Controllers.VillaController.GetAllVillas (VillaAPI)' with route pattern 'api/Villa' is valid for the request path '/api/Villa'
+2023-03-23 10:08:58.735 -04:00 [DBG] Request matched endpoint 'VillaAPI.Controllers.VillaController.GetAllVillas (VillaAPI)'
+2023-03-23 10:08:58.736 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-23 10:08:58.738 -04:00 [INF] Executing endpoint 'VillaAPI.Controllers.VillaController.GetAllVillas (VillaAPI)'
+2023-03-23 10:08:58.748 -04:00 [INF] Route matched with {action = "GetAllVillas", controller = "Villa"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllVillas() on controller VillaAPI.Controllers.VillaController (VillaAPI).
+2023-03-23 10:08:58.748 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-23 10:08:58.748 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-23 10:08:58.749 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-23 10:08:58.749 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-23 10:08:58.749 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-23 10:08:58.749 -04:00 [DBG] Executing controller factory for controller VillaAPI.Controllers.VillaController (VillaAPI)
+2023-03-23 10:08:58.750 -04:00 [DBG] Executed controller factory for controller VillaAPI.Controllers.VillaController (VillaAPI)
+2023-03-23 10:08:58.750 -04:00 [INF] Getting all informations
+2023-03-23 10:08:58.752 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-03-23 10:08:58.753 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-03-23 10:08:58.753 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-03-23 10:08:58.753 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-03-23 10:08:58.754 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-03-23 10:08:58.754 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VillaAPI.Models.DTO.VillaDTO, VillaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-03-23 10:08:58.937 -04:00 [INF] Executed action VillaAPI.Controllers.VillaController.GetAllVillas (VillaAPI) in 184.0114ms
+2023-03-23 10:08:58.938 -04:00 [INF] Executed endpoint 'VillaAPI.Controllers.VillaController.GetAllVillas (VillaAPI)'
+2023-03-23 10:08:58.938 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/api/Villa - - - 200 105 application/json;+charset=utf-8 216.2591ms
+2023-03-23 10:09:14.196 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7153/api/Villa/0 - -
+2023-03-23 10:09:14.196 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Villa/0'
+2023-03-23 10:09:14.196 -04:00 [DBG] Endpoint 'VillaAPI.Controllers.VillaController.GetVilla (VillaAPI)' with route pattern 'api/Villa/{id:int}' is valid for the request path '/api/Villa/0'
+2023-03-23 10:09:14.196 -04:00 [DBG] Request matched endpoint 'VillaAPI.Controllers.VillaController.GetVilla (VillaAPI)'
+2023-03-23 10:09:14.197 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-03-23 10:09:14.197 -04:00 [INF] Executing endpoint 'VillaAPI.Controllers.VillaController.GetVilla (VillaAPI)'
+2023-03-23 10:09:14.216 -04:00 [INF] Route matched with {action = "GetVilla", controller = "Villa"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetVilla(Int32) on controller VillaAPI.Controllers.VillaController (VillaAPI).
+2023-03-23 10:09:14.216 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-03-23 10:09:14.216 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-03-23 10:09:14.216 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-03-23 10:09:14.216 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-03-23 10:09:14.216 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-03-23 10:09:14.216 -04:00 [DBG] Executing controller factory for controller VillaAPI.Controllers.VillaController (VillaAPI)
+2023-03-23 10:09:14.217 -04:00 [DBG] Executed controller factory for controller VillaAPI.Controllers.VillaController (VillaAPI)
+2023-03-23 10:09:14.223 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-03-23 10:09:14.225 -04:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-03-23 10:09:14.226 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-23 10:09:14.226 -04:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-03-23 10:09:14.226 -04:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-03-23 10:09:14.228 -04:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-03-23 10:09:14.231 -04:00 [ERR] Get Villa with id throws an error0
+2023-03-23 10:09:14.233 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-03-23 10:09:14.233 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-03-23 10:09:14.234 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-03-23 10:09:14.234 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-03-23 10:09:14.234 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-03-23 10:09:14.275 -04:00 [INF] Executed action VillaAPI.Controllers.VillaController.GetVilla (VillaAPI) in 58.3412ms
+2023-03-23 10:09:14.275 -04:00 [INF] Executed endpoint 'VillaAPI.Controllers.VillaController.GetVilla (VillaAPI)'
+2023-03-23 10:09:14.275 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7153/api/Villa/0 - - - 400 163 application/problem+json;+charset=utf-8 79.5879ms
